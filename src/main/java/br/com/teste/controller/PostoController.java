@@ -22,6 +22,7 @@ public class PostoController {
 	
 	@GetMapping("{cidade}")
 	public List<Posto> buscarPostosPorCidade(@PathVariable String cidade){
+		System.out.println(cidade);
 		return service.buscaPorCidade(cidade);
 	}
 
