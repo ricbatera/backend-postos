@@ -34,5 +34,9 @@ public class PostoService {
 	public List<Posto> buscaPorCidade(String cidade){
 		return repo.buscaPorCidade(cidade);
 	}
+	
+	public void deletar() {
+		repo.deleteAll();
+	}
 
 }
